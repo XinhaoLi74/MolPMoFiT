@@ -2,4 +2,5 @@
 
 Souce code for paper 'Inductive transfer learning for Molecular Activity Prediction: Next-Gen QSAR Models with MolPMoFiT'
 
-The code will be made avaiable soon.
+The code is provided as jupyter notebook.
+
