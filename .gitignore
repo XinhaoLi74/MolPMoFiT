@@ -2,6 +2,7 @@
 
 # Ignore folder
 results/
+.ipynb_checkpoints/
 
 # Ignore all .txt file: '*.txt'
 .ipynb_checkpoints
