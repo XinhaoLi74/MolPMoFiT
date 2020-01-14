@@ -1,0 +1,11 @@
+name: molpmofit
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - rdkit
+  - fastai
+  - jupyter
+  - jupyterlab
+prefix: /home/xinhao/anaconda3/envs/molpmofit
+
