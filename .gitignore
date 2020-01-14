@@ -4,3 +4,4 @@
 results/
 
 # Ignore all .txt file: '*.txt'
+.ipynb_checkpoints
