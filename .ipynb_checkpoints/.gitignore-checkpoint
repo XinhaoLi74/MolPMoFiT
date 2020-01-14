@@ -1,6 +1,0 @@
-# ignore fire: e.g., 'a.txt'
-
-# Ignore folder
-results/
-
-# Ignore all .txt file: '*.txt'
