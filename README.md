@@ -2,7 +2,9 @@
 
 Implementation of **Inductive transfer learning for Molecular Activity Prediction: Next-Gen QSAR Models with MolPMoFiT**
 
-**Mol**ecular **P**rediction **M**odel **Fi**ne-**T**uning (**MolPMoFiT**) is a transfer learning that can be applied to any QSPR/QSAR problems. A large-scale molecular structure prediction model is pre-trained using one million unlabeled molecules from ChEMBL in a self-supervised learning manor, and can then be fine-tuned on various QSPR/QSAR tasks for smaller chemical datasets with a specific endpoints.
+**Mol**ecular **P**rediction **M**odel **Fi**ne-**T**uning (**MolPMoFiT**) is a transfer learning that can be applied to any QSPR/QSAR problems. 
+
+MolPMoFiT is adapted from the [ULMFiT](https://arxiv.org/abs/1801.06146) using Pytorch and [Fastai v1](https://github.com/fastai/fastai). A large-scale molecular structure prediction model is pre-trained using one million unlabeled molecules from ChEMBL in a self-supervised learning manor, and can then be fine-tuned on various QSPR/QSAR tasks for smaller chemical datasets with a specific endpoints.
 
 ![UMSPMFiT Overview](TOC.PNG)
 
