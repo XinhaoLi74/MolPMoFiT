@@ -2,6 +2,7 @@ name: molpmofit
 channels:
   - conda-forge
   - defaults
+  - fastai
 dependencies:
   - rdkit
   - fastai
