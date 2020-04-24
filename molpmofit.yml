@@ -7,5 +7,6 @@ dependencies:
   - fastai
   - jupyter
   - jupyterlab
+  - scikit-learn
 prefix: /home/xinhao/anaconda3/envs/molpmofit
 
