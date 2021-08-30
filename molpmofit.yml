@@ -5,7 +5,7 @@ channels:
   - fastai
 dependencies:
   - rdkit
-  - fastai
+  - fastai=1.0.61
   - jupyter
   - jupyterlab
   - scikit-learn
