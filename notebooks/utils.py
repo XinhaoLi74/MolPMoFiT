@@ -13,12 +13,12 @@ def randomize_smiles(smiles):
     return Chem.MolToSmiles(nm, canonical=False, isomericSmiles=True, kekuleSmiles=False)
 
 
-def smiles_augmentation(df, N_rounds):
+def smiles_augmentation(df, N_rounds, smiles_col="SMILES"):
     dist_aug = {col_name: [] for col_name in df}
 
     for i in range(df.shape[0]):
         for j in range(N_rounds):
-            dist_aug['SMILES'].append(randomize_smiles(df.iloc[i].SMILES))
+            dist_aug[smiles_col].append(randomize_smiles(df.iloc[i][smiles_col]))
             dist_aug['canonical'].append('no')
 
     df_aug = pd.DataFrame.from_dict(dist_aug)
@@ -27,7 +27,7 @@ def smiles_augmentation(df, N_rounds):
     df = pd.concat([df, df_aug], sort=False).reset_index(drop=True)
     #shuffle the data
     df = df.reindex(np.random.permutation(df.index))
-    return pd.DataFrame.from_dict(df).drop_duplicates('SMILES')
+    return pd.DataFrame.from_dict(df).drop_duplicates(smiles_col)
 
 # Don't include the defalut specific token of fastai, only keep the padding token
 BOS,EOS,FLD,UNK,PAD = 'xxbos','xxeos','xxfld','xxunk','xxpad'

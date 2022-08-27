@@ -32,3 +32,6 @@ The code is provided as `jupyter notebook` in the `notebooks` folder. All the co
 2. `02_MSPM_TS_finetuning.ipynb`: (1) Fine-tuning the general MSPM on a target dataset to generate a task-specific MSPM model. (2) Fine-tuning the task-specific MSPM to tran a QSAR model.
 3. `03_QSAR_Classifcation.ipynb`: Fine-tuning the general domain MSPM to train a classification model.
 4. `04_QSAR_Regression.ipynb`: Fine-tuning the general domain MSPM to train a regression model.
+
+## Pre-trained Models Download
+1. [ChemBL_1M_atom](https://figshare.com/ndownloader/files/36898600)
