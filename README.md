@@ -34,4 +34,4 @@ The code is provided as `jupyter notebook` in the `notebooks` folder. All the co
 4. `04_QSAR_Regression.ipynb`: Fine-tuning the general domain MSPM to train a regression model.
 
 ## Pre-trained Models Download
-1. [ChemBL_1M_atom](https://figshare.com/ndownloader/files/36898600)
+1. [ChemBL_1M_atom](https://figshare.com/ndownloader/files/36898600). See `notebooks/05_Pretrained_Models.ipynb` for instructions of usage.
