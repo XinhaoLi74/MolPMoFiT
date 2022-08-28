@@ -35,6 +35,8 @@ The code is provided as `jupyter notebook` in the `notebooks` folder. All the co
 
 ## Pre-trained Models Download
 1. Download [ChEMBL_1M_atom](https://figshare.com/ndownloader/files/36898600). See `notebooks/05_Pretrained_Models.ipynb` for instructions of usage.
-
+    - This model is trained on 1M ChEMBL molecules with the atomwise tokenization method (original MoPMoFiT). 
+    
 2. Download [ChEMBL_1M_SPE](https://figshare.com/ndownloader/files/36910486). See `notebooks/06_SPE_Pretrained_Models.ipynb` for instructions of usage.
+    - This model is trained on 1M ChEMBL molecules with the SMILES pair encoding tokenization method.
     - [SMILES Pair Encoding](https://github.com/XinhaoLi74/SmilesPE) (SmilesPE) is A Data-Driven Substructure Tokenization Algorithm for Deep Learning.
