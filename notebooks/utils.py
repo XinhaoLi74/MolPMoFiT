@@ -91,6 +91,20 @@ class MolTokenizer(BaseTokenizer):
         pass
 
 
+class MolTokenizer_SPE(BaseTokenizer):
+    def __init__(self, spe_tokenizer, lang = 'en'):
+        self.lang = lang
+        self.tok = spe_tokenizer
+        
+    def tokenizer(self, smiles):
+        # add specific token '[BOS]' to represetences the start of SMILES
+        smiles = '[BOS]' + smiles
+          
+        return self.tok.tokenize(smiles).split(' ')    
+    
+    def add_special_cases(self, toks):
+        pass    
+    
 def auroc_score(input, target):
     input, target = input.cpu().numpy()[:,1], target.cpu().numpy()
     return roc_auc_score(target, input)
